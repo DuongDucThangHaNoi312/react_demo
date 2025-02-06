@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-- Cách 1: Inline  -->
+    <button onclick="alert('Hello kiểu inline')"> Click me</button>
+
+    <button id="button2"> Click me cách internal</button>
+
+    <button id="button3"> Click me cách external</button>
+</body>
+
+<!-- Cách 2: internal  -->
+<script>
+    var button2 = document.getElementById('button2');
+    button2.onclick = function () {
+        alert('Hello kiểu internal');
+    }
+</script>
+
+<!-- Cách 3: external  -->
+<script src="demo.js"></script>
+
+<script>
+    // tên biến phân biệt in hoa in thường
+    // tên biến bắt đầu là chữ cái hoặc kí tự _
+    // không được bắt đầu bằng số
+    // không được bắt được bằng kí tự đặc biệt(# % ^ -)
+
+    var tenBien = 10; // kiểu camelCase
+    var TenBien = 10; // kiểu PascalCase
+    var ten_bien = 10; // kiểu snake_case
+
+
+</script>
+
+</html>
