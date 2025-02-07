@@ -39,7 +39,65 @@
     var TenBien = 10; // kiểu PascalCase
     var ten_bien = 10; // kiểu snake_case
 
+    var a = 10;
+    var b = a++;
+    console.log("b: ", b);
 
+    var x = 10;
+    var y = ++x
+    console.log("y: ", y);
+
+    var m = 10
+    var n = m++ + ++m + m++ + m++ + ++m;
+    // = 10 + 12 + 12 + 13 + 15
+    console.log("n: ", n);
+
+    // kiểu null: là khai báo biến có giá trị null
+    var bien_null = null;
+    console.log('bien_null:', bien_null);
+
+    // kiểu undefined là khi khai báo không gán giá trị cho biến
+    var bien_undefined;
+    console.log('bien_undefined', bien_undefined);
+
+    function sum(a, b) {
+        console.log('tong cua a va b la: ', (a + b));
+    }
+
+    sum(1, 2);
+
+    // Dữ liệu phức tạp
+    // Kiểu object là kiểu tham chiếu, có thể hiểu là tập hợp các cặp key - value, có 2 loại là array và object
+    var user = {
+        ten: "Nam",
+        tuoi: 20,
+        phone: "09123123131",
+        sum: function (a, b) {
+            console.log('ting tong trong object', (a + b));
+
+        }
+    }
+
+    console.log("user", user);
+    console.log(user.ten);
+    console.log(user.tuoi);
+    console.log(user.sum(1, 5));
+
+    var list_user = [
+        'Nguyen Van A',
+        'Nguyen Van B',
+        'Nguyen Van C'
+    ];
+
+    console.log("list_user", list_user);
+
+    // Một số hàm built trong JS
+    // alert(), confirm
+
+    // check type của biến
+    // typeof x (x là biến)
+
+    // 1 số hàm với Array: toString(), join(), push(), concat(), slice()
 </script>
 
 </html>
