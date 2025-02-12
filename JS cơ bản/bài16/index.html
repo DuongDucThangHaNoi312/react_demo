@@ -46,6 +46,35 @@
     //         const element = object[key];
     // }
 
+    // các vòng loop 
+    // for in lấy ra key của 1 object( dùng được cả với object và array)
+    var infor_user = {
+        name: "AN",
+        age: 1,
+        phone: '01121312312'
+    }
+
+    for (key in infor_user) {
+        console.log(key, infor_user[key]);
+    }
+
+
+    var hoc_sinh_gioi = [
+        'Nguyen Van An',
+        'Duong Anh Duy',
+        'Duong Quynh An'
+    ]
+
+    // for of lấy ra 1 phần tử của array hoặc string(k dùng được với object)
+    for (hoc_sinh of hoc_sinh_gioi) {
+        console.log(hoc_sinh);
+    }
+
+    // for in dùng được với object và array
+    for (hoc_sinh in hoc_sinh_gioi) {
+        console.log(hoc_sinh, hoc_sinh_gioi[hoc_sinh]);
+    }
+
     // cách khai báo var và let
     // let chỉ có phạm vi sử dụng trong khối khai báo
     // var không bị phạm vi khối làm ảnh hưởng, vẫn chạy bth
