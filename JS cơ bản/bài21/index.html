@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1> JS nâng cao </h1>
+</body>
+
+<script>
+    // Hoisting  sử dụng biến trước khi khai báo( JS sẽ di chuyển tất cả các dòng code khai báo biến lên đầu do đó các dòng code sử dụng biến chưa được khai báo sẽ không bị lỗi)
+    console.log(x);             // tương đương var x;
+                                // console.log(x);      
+    var x = 123;                // x = 123;
+
+
+
+
+
+    
+    var a = 10; // biến global
+    function test1() {
+        console.log(a);
+    }
+
+    function test2() {
+        let b = 11; // biến local
+        console.log(b);
+    }
+
+    test1();
+
+    test2();
+
+    // console.log(b);
+</script>
+
+</html>
