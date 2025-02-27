@@ -14,7 +14,29 @@
 </body>
 
 <script>
-    
+    function test1() {
+        console.log('ham test1');
+    }
+
+    function test2() {
+        console.log('ham test2');
+    }
+
+    // dạng bình thường
+    test1();
+    test2();
+
+    // dạng callback
+    function test3(callback) {
+        console.log('ham test3');
+        callback();
+    }
+
+    function test4() {
+        console.log('ham test4');
+    }
+
+    test3(test4);
 </script>
 
 </html>

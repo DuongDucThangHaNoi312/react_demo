@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1> JS nâng cao </h1>
+</body>
+
+<script>
+    // strict mode  là chế độ nghiêm ngặt nó bắt buộc lập trình viên phải tuân theo quy tắc mà js đưa ra, (ví dụ sử dung biến chưa được định nghĩa)
+    // để sử dụng thì khai báo "use strict"; ở trước vị trí  mà ta muốn sử dụng
+    // có 2 kiểu strict mode: toàn cục và cục bộ
+    "use strict";
+    var a = 20;
+    console.log(a);
+
+    function test() {
+        "use strict";
+        b = 40
+        console.log(b);
+    }
+
+    test();
+</script>
+
+</html>
