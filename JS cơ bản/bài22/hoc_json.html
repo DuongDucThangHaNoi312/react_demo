@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1> Json </h1>
+</body>
+<script>
+    // json là 1 kiểu dử liệu được lưu dưới dạng chuỗi
+    // trong json: 
+    // mỗi thông tin dữ liệu có 2 phần key và value
+    // key bắt buộc đặt trong ""
+    // nếu có nhiều cặp key-value thì ngăn cách nhau bởi dấu , 
+    // cặp key value cuối cùng thì không cho phép có dấu , 
+
+    // đây là object
+    let inforAn = {
+        name: "Dương Quỳnh An",
+        age: 1,
+        gender: 2,
+    }
+
+    // đây là json
+    let inforDuy = `
+    {
+        "name": "Dương Anh Duy",
+        "age": 3,
+        "gender": 1
+    }
+    `;
+
+    // convert json sang object của js sử dùng hàm JSON.parse();
+    console.log('json', inforDuy);
+
+    let inforDuyToJS = JSON.parse(inforDuy);
+
+    console.log('convert json sang object của js sử dùng hàm JSON.parse()', inforDuyToJS);
+    console.log('name', inforDuyToJS.name);
+    console.log('age', inforDuyToJS.age);
+
+    // convert Object js sang json sử dụng JSON.stringify();
+    let inforAnToJson = JSON.stringify(inforAn);
+    console.log("convert Object js sang json sử dụng JSON.stringify()", inforAnToJson);
+
+
+    // json có giá trị là số
+    let jsonNumber = `5`;
+    console.log("jsonNumber", jsonNumber);
+    let jsonNumberToNumberJs = JSON.parse(jsonNumber);
+    console.log('convert json dạng số sang số của js sử dùng hàm JSON.parse()', jsonNumberToNumberJs);
+
+
+    // json có giá trị là string
+    let jsonString = `"Hello"`;
+    console.log("jsonString", jsonString);
+    let jsonStringToStringJs = JSON.parse(jsonString);
+    console.log('convert json  dạng string sang string của js sử dùng hàm JSON.parse()', jsonStringToStringJs);
+
+
+    // json có giá trị là bolean
+    let jsonBolean = `true`;
+    console.log("jsonBolean", jsonBolean);
+    let jsonBoleanToBoleanJs = JSON.parse(jsonBolean);
+    console.log('convert json dạng bolean sang bolean của js sử dùng hàm JSON.parse()', jsonBoleanToBoleanJs);
+
+
+    // json có giá trị là array
+    let jsonArray = `
+    [
+        { "id": 1, "name": "Bình"},
+        { "id": 2, "name": "An"} 
+    ]
+    `;
+    console.log("jsonArray", jsonArray);
+    let jsonArrayToArrayJs = JSON.parse(jsonArray);
+    console.log('convert json dạng array sang array của js sử dùng hàm JSON.parse()', jsonArrayToArrayJs);
+
+</script>
+
+</html>
